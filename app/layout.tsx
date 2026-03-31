@@ -10,7 +10,14 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ramond-and-maryrose
 const canonicalUrl = siteUrl.replace(/\/$/, "")
 const desktopHero = "/Details/ImagePreview.png"
 const mobileHero = "/Details/ImagePreview.png"
-const eventImageUrl = `${canonicalUrl}${desktopHero}`
+
+// Use Cloudinary for the OG image so it's always available via CDN,
+// regardless of whether the /public file has been deployed yet.
+// f_jpg forces JPEG output for maximum OG scraper compatibility (avoids WebP).
+const cloudName = process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME
+const eventImageUrl = cloudName
+  ? `https://res.cloudinary.com/${cloudName}/image/upload/f_jpg,q_auto,w_1200,h_630,c_fill/wedding-projects/ramon-and-mary-rose/Details/ImagePreview`
+  : `${canonicalUrl}${desktopHero}`
 
 const coupleNames = `${siteConfig.couple.groomNickname} & ${siteConfig.couple.brideNickname}`
 const eventTitle = `${coupleNames} - Wedding Invitation`
@@ -115,7 +122,7 @@ export const metadata: Metadata = {
         secureUrl: eventImageUrl,
         width: 1200,
         height: 630,
-        type: "image/jpeg",
+        type: cloudName ? "image/jpeg" : "image/png",
         alt: `${coupleNames} Wedding Invitation - ${siteConfig.wedding.date}`,
       },
     ],
