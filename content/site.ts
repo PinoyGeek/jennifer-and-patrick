@@ -5,7 +5,7 @@ export const siteConfig = {
     groom: "Patrick Capulong", //Ltryl B. Benitez
     groomNickname: "Patrick",
     monogram:"/monogram/monogram.png" ,//Ltryl
-    backgroundMusic:"/background_music/Ed Sheeran - The Joker And The Queen (Lyrics) feat. Taylor Swift.mp3"
+    backgroundMusic:"/background_music/Up Dharma Down - Tadhana (Instrumental).mp3"
   },
   googleAPI:{
     messageForm: "https://docs.google.com/forms/d/e/1FAIpQLSdC0hHItXxsbAmG_-LtoQrb8ihxw-5OthDKLKRbSXHJ0Llqfg/formResponse", //done
