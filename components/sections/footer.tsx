@@ -132,7 +132,7 @@ export function Footer() {
 
       <footer className="relative z-10 mt-12 sm:mt-16 overflow-hidden">
       {/* Corner decorations — deep brown tint (hero style) */}
-      <div className="absolute left-0 top-0 z-0 pointer-events-none">
+      {/* <div className="absolute left-0 top-0 z-0 pointer-events-none">
         <CloudinaryImage src="/decoration/flower-decoration-left-bottom-corner2.png" alt="" width={300} height={300} className="w-auto h-auto max-w-[160px] sm:max-w-[200px] md:max-w-[240px] scale-y-[-1]" priority={false} style={{ filter: DECO_FILTER }} />
       </div>
       <div className="absolute right-0 top-0 z-0 pointer-events-none">
@@ -143,7 +143,7 @@ export function Footer() {
       </div>
       <div className="absolute right-0 bottom-0 z-0 pointer-events-none">
         <CloudinaryImage src="/decoration/flower-decoration-left-bottom-corner2.png" alt="" width={300} height={300} className="w-auto h-auto max-w-[160px] sm:max-w-[200px] md:max-w-[240px] scale-x-[-1]" priority={false} style={{ filter: DECO_FILTER }} />
-      </div>
+      </div> */}
       
       {/* Monogram / Couple Illustration - centered at top */}
       <div className="relative z-10 flex flex-col items-center pt-6 sm:pt-8 md:pt-10 mb-5 sm:mb-6 md:mb-8">
@@ -160,7 +160,7 @@ export function Footer() {
               fill
               className="object-contain"
               priority={false}
-              style={{ filter: DECO_FILTER }}
+              // style={{ filter: DECO_FILTER }}
             />
           </div>
         </motion.div>

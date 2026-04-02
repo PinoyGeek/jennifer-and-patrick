@@ -191,7 +191,7 @@ export function BookOfGuests() {
       />
 
       {/* Flower decoration — warm brown tint */}
-      <div className="absolute left-0 top-0 z-0 pointer-events-none">
+      {/* <div className="absolute left-0 top-0 z-0 pointer-events-none">
         <CloudinaryImage
           src="/decoration/flower-decoration-left-bottom-corner2.png"
           alt=""
@@ -234,7 +234,7 @@ export function BookOfGuests() {
           priority={false}
           style={{ filter: DECO_FILTER_BOOK }}
         />
-      </div>
+      </div> */}
 
       {/* Section Header */}
       <div className="relative z-10 text-center mb-3 sm:mb-4 md:mb-6 px-2 sm:px-3 md:px-4">
