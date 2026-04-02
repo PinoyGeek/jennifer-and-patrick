@@ -58,8 +58,8 @@ export const siteConfig = {
     image: "/Details/ceremony.png",
   },
   reception: {
-    location: "Aquila Crystal Palace Tagaytay",
-    venue: "Emilio Aguinaldo Highway, Tagaytay City, Philippines",
+    location: "Crystal palace of aquila in the sky",
+    venue: "Purok 5 Bgy, Pulong Bunga, Silang, 4118  Cavite",
     date: "May 22, 2026",
     time: "2 :00 PM",
     image: ["/Details/reception3.png","/Details/reception4.png"],
@@ -70,16 +70,16 @@ export const siteConfig = {
     sponsors: {
       male: "Guests are kindly requested to wear attire in any of the shades within our wedding palette.Color pallet and image to be followed. STRICTLY no shorts, maong jeans, t-shirts, or slippers.",
       female: "Guests are kindly requested to wear attire in any of the shades within our wedding palette.Color pallet and image to be followed. STRICTLY no shorts, maong jeans, t-shirts, or slippers.",
-      notes: "Navy blue dress, Navy blue/black coat and tie",
-      photo: "/Details/newSponsors.png",
+      notes: "Principal sponsors: Navy blue Dress | Black Coat/ Navy blue or black necktie",
+      photo: "/Details/sponsors attire.png",
       palette: "#000000, #1F1D1D,#001F4B, #0B1F3A, #142C4F",
     },
     guests: {
       gents: "Guests are kindly requested to wear attire in any of the shades within our wedding palette.Color pallet and image to be followed. STRICTLY no shorts, maong jeans, t-shirts, or slippers.",
       ladies: "Guests are kindly requested to wear attire in any of the shades within our wedding palette.Color pallet and image to be followed. STRICTLY no shorts, maong jeans, t-shirts, or slippers.",
-      notes: "Gray/dark gray cocktail dress/ semi-formal dress",
-      photo: "/Details/newGuest.png",
-      palette: "#000000, #1F1D1D, #3A3636, #514B4B",
+      notes: "Guest:  Dark Gray - Semi formal | Cocktail dress",
+      photo: "/Details/guestAttire.png",
+      palette: " #514B4B",
     },
     entourage: {
       notes: "Black dresses | Dark gray coat & tie",

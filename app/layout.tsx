@@ -10,13 +10,7 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://jennifer-and-patric
 const canonicalUrl = siteUrl.replace(/\/$/, "")
 const desktopHero = "/Details/LinkPreview.jpg"
 const mobileHero = "/Details/LinkPreview.jpg"
-
-// Hardcoded Cloudinary URL — image is already uploaded and always accessible via CDN.
-// f_jpg forces JPEG so all OG scrapers (iMessage, Viber, Facebook, etc.) can display it.
-// The public-folder URL is kept only as a fallback in the images array below.
-const OG_IMAGE_CLOUDINARY =
-  "https://res.cloudinary.com/detbgvt1c/image/upload/f_jpg,q_auto,w_1200,h_630,c_fill/wedding-projects/jennifer-and-patrick/Details/LinkPreview.jpg"
-const OG_IMAGE_FALLBACK = `${canonicalUrl}${desktopHero}`
+const eventImageUrl = `${canonicalUrl}${desktopHero}`
 
 const coupleNames = `${siteConfig.couple.groomNickname} & ${siteConfig.couple.brideNickname}`
 const eventTitle = `${coupleNames} - Wedding Invitation`
@@ -26,8 +20,8 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Event",
   name: `${siteConfig.couple.groomNickname} & ${siteConfig.couple.brideNickname} Wedding`,
-  startDate: "2026-04-18T14:00:00+08:00",
-  endDate: "2026-04-18T22:00:00+08:00",
+  startDate: "2026-03-21T09:30:00+08:00",
+  endDate: "2026-03-21T21:30:00+08:00",
   eventStatus: "https://schema.org/EventScheduled",
   eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
   location: [
@@ -54,7 +48,7 @@ const jsonLd = {
       },
     },
   ],
-  image: [OG_IMAGE_CLOUDINARY],
+  image: [eventImageUrl],
   description:
     `You're invited to celebrate the wedding of ${siteConfig.couple.groomNickname} & ${siteConfig.couple.brideNickname}. Discover ceremony and reception details, RSVP, and explore their story.`,
   organizer: {
@@ -117,19 +111,11 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: OG_IMAGE_CLOUDINARY,
-        secureUrl: OG_IMAGE_CLOUDINARY,
+        url: eventImageUrl,
+        secureUrl: eventImageUrl,
         width: 1200,
         height: 630,
         type: "image/jpeg",
-        alt: `${coupleNames} Wedding Invitation - ${siteConfig.wedding.date}`,
-      },
-      {
-        url: OG_IMAGE_FALLBACK,
-        secureUrl: OG_IMAGE_FALLBACK,
-        width: 1200,
-        height: 630,
-        type: "image/png",
         alt: `${coupleNames} Wedding Invitation - ${siteConfig.wedding.date}`,
       },
     ],
@@ -139,7 +125,7 @@ export const metadata: Metadata = {
     title: `${coupleNames} Wedding Invitation`,
     description:
       `You're invited to the wedding of ${siteConfig.couple.groomNickname} & ${siteConfig.couple.brideNickname} on ${siteConfig.wedding.date}. RSVP, explore their story, and get all the details for the big day! #${siteConfig.couple.groomNickname}And${siteConfig.couple.brideNickname}SayIDo`,
-    images: [OG_IMAGE_CLOUDINARY, OG_IMAGE_FALLBACK],
+    images: [eventImageUrl],
     creator: `@${siteConfig.couple.groomNickname}And${siteConfig.couple.brideNickname}`,
     site: `@${siteConfig.couple.groomNickname}And${siteConfig.couple.brideNickname}`,
   },
@@ -188,14 +174,15 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Kapakana:wght@300..400&display=swap" rel="stylesheet" />
         <link rel="preload" as="image" href={mobileHero} media="(max-width: 767px)" />
         <link rel="preload" as="image" href={desktopHero} media="(min-width: 768px)" />
-        <link rel="preload" as="image" href="/Details/ceremony.png" />
-        <link rel="preload" as="image" href="/Details/reception.png" />
+        <link rel="preload" as="image" href="/Details/St. Augustine Parish Church.jpg" />
+        <link rel="preload" as="image" href="/Details/La Mariposa Tagaytay Events Place.jpg" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       </head>
       <body
-        className={`${inter.variable} ${greatVibes.variable} ${imperialScript.variable} ${cinzel.variable} font-inter antialiased text-foreground`}
+       className={`${inter.variable} ${greatVibes.variable} ${imperialScript.variable} ${cinzel.variable} font-inter antialiased text-foreground`}
       >
         <ClientLayout>
           {children}

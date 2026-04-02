@@ -37,12 +37,11 @@ export function Hero() {
             phase >= 1 ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
           }`}
           style={{
-            background: "rgba(0, 20, 50, 0.72)",
-            border: "1px solid rgba(178, 205, 224, 0.13)",
+            background: "rgba(0, 0, 0, 0.78)",
+            border: "1px solid rgba(255, 255, 255, 0.10)",
             backdropFilter: "blur(12px)",
             WebkitBackdropFilter: "blur(12px)",
-            // boxShadow:
-            //   "0 24px 80px rgba(0, 8, 20, 0.55), inset 0 1px 0 rgba(178, 205, 224, 0.07)",
+            boxShadow: "0 24px 80px rgba(0, 0, 0, 0.60), inset 0 1px 0 rgba(255, 255, 255, 0.05)",
           }}
         >
 
@@ -55,7 +54,7 @@ export function Hero() {
                   width: "160px",
                   height: "160px",
                   background:
-                    "radial-gradient(circle, rgba(100, 151, 178, 0.22) 0%, transparent 65%)",
+                    "radial-gradient(circle, rgba(255, 255, 255, 0.10) 0%, transparent 65%)",
                 }}
               />
               <div
@@ -63,7 +62,7 @@ export function Hero() {
                 style={{
                   width: "90px",
                   height: "90px",
-                  border: "1px solid rgba(178, 205, 224, 0.14)",
+                  border: "1px solid rgba(255, 255, 255, 0.14)",
                 }}
               />
               <CloudinaryImage
@@ -94,7 +93,7 @@ export function Hero() {
           <div className={`flex items-center gap-3 justify-center mt-5 mb-4 ${vis(2)}`}>
             <div
               className="h-px flex-1"
-              style={{ background: "linear-gradient(to left, rgba(178, 205, 224, 0.26), transparent)" }}
+              style={{ background: "linear-gradient(to left, rgba(255, 255, 255, 0.20), transparent)" }}
             />
             <span
               style={{
@@ -109,7 +108,7 @@ export function Hero() {
             </span>
             <div
               className="h-px flex-1"
-              style={{ background: "linear-gradient(to right, rgba(178, 205, 224, 0.26), transparent)" }}
+              style={{ background: "linear-gradient(to right, rgba(255, 255, 255, 0.20), transparent)" }}
             />
           </div>
 
@@ -133,7 +132,7 @@ export function Hero() {
                 fontSize: "clamp(2.5rem, 8.5vw, 5.5rem)",
                 color: "var(--color-motif-cream)",
                 letterSpacing: "0.12em",
-                textShadow: "0 2px 34px rgba(100, 151, 178, 0.4)",
+                textShadow: "0 2px 34px rgba(255, 255, 255, 0.15)",
               }}
             >
               {siteConfig.couple.brideNickname.trim()}
@@ -143,7 +142,7 @@ export function Hero() {
             <div className="flex items-center gap-3 justify-center my-2">
               <div
                 className="h-px flex-1 max-w-[55px]"
-                style={{ background: "linear-gradient(to left, rgba(178, 205, 224, 0.2), transparent)" }}
+                style={{ background: "linear-gradient(to left, rgba(255, 255, 255, 0.15), transparent)" }}
               />
               <span
                 style={{
@@ -157,7 +156,7 @@ export function Hero() {
               </span>
               <div
                 className="h-px flex-1 max-w-[55px]"
-                style={{ background: "linear-gradient(to right, rgba(178, 205, 224, 0.2), transparent)" }}
+                style={{ background: "linear-gradient(to right, rgba(255, 255, 255, 0.15), transparent)" }}
               />
             </div>
 
@@ -167,7 +166,7 @@ export function Hero() {
                 fontSize: "clamp(2.5rem, 8.5vw, 5.5rem)",
                 color: "var(--color-motif-cream)",
                 letterSpacing: "0.12em",
-                textShadow: "0 2px 34px rgba(100, 151, 178, 0.4)",
+                textShadow: "0 2px 34px rgba(255, 255, 255, 0.15)",
               }}
             >
               {siteConfig.couple.groomNickname.trim()}
@@ -178,12 +177,12 @@ export function Hero() {
           <div className={`flex items-center gap-3 justify-center mt-7 mb-1 ${vis(4)}`}>
             <div
               className="h-px flex-1"
-              style={{ background: "linear-gradient(to left, rgba(178, 205, 224, 0.2), transparent)" }}
+              style={{ background: "linear-gradient(to left, rgba(255, 255, 255, 0.18), transparent)" }}
             />
-            <span style={{ color: "rgba(178, 205, 224, 0.35)", fontSize: "5px" }}>◆</span>
+            <span style={{ color: "rgba(255, 255, 255, 0.35)", fontSize: "5px" }}>◆</span>
             <div
               className="h-px flex-1"
-              style={{ background: "linear-gradient(to right, rgba(178, 205, 224, 0.2), transparent)" }}
+              style={{ background: "linear-gradient(to right, rgba(255, 255, 255, 0.18), transparent)" }}
             />
           </div>
 
@@ -258,16 +257,16 @@ export function Hero() {
           <div className={`mt-10 flex justify-center ${vis(5)}`}>
             <a
               href="#guest-list"
-              className="inline-flex items-center justify-center px-10 py-3 rounded-sm transition-all duration-300 hover:bg-[rgba(1,91,151,0.45)] hover:border-[rgba(178,205,224,0.5)]"
+              className="inline-flex items-center justify-center px-10 py-3 rounded-sm transition-all duration-300 hover:bg-[rgba(255,255,255,0.10)] hover:border-[rgba(255,255,255,0.45)]"
               style={{
                 fontFamily: '"Cinzel", serif',
                 fontSize: "0.58rem",
                 letterSpacing: "0.45em",
                 textTransform: "uppercase",
-                color: "#EEF4FA",
-                border: "1px solid rgba(178, 205, 224, 0.28)",
-                background: "rgba(1, 91, 151, 0.22)",
-                boxShadow: "0 8px 32px rgba(1, 91, 151, 0.28)",
+                color: "#FFFFFF",
+                border: "1px solid rgba(255, 255, 255, 0.22)",
+                background: "rgba(255, 255, 255, 0.06)",
+                boxShadow: "0 8px 32px rgba(0, 0, 0, 0.40)",
               }}
             >
               RSVP

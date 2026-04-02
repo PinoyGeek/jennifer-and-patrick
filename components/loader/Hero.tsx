@@ -161,9 +161,9 @@ export const Hero: React.FC<HeroProps> = ({ onOpen, visible }) => {
                 fill
                 className="object-contain"
                 priority
-                style={{
-                  filter: "brightness(0) saturate(100%) invert(17%) sepia(94%) saturate(1700%) hue-rotate(195deg) brightness(85%) contrast(110%) drop-shadow(0 4px 16px rgba(8,70,127,0.35))",
-                }}
+                // style={{
+                //   filter: "brightness(0) saturate(100%) invert(17%) sepia(94%) saturate(1700%) hue-rotate(195deg) brightness(85%) contrast(110%) drop-shadow(0 4px 16px rgba(8,70,127,0.35))",
+                // }}
               />
             </div>
           </div>

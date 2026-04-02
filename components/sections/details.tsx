@@ -652,7 +652,7 @@ export function Details() {
               </div>
 
               {/* Color palette for principal sponsors — keep explicit dress-code colors (not UI palette) */}
-              <div className="flex justify-center gap-2 sm:gap-3 md:gap-4 flex-wrap mb-5 sm:mb-6 md:mb-7 px-2">
+              {/* <div className="flex justify-center gap-2 sm:gap-3 md:gap-4 flex-wrap mb-5 sm:mb-6 md:mb-7 px-2">
                 {siteConfig.dressCode.guests.palette.split(',').map((color) => (
                   <div
                     key={color.trim()}
@@ -661,7 +661,7 @@ export function Details() {
                     title={color.trim()}
                   />
                 ))}
-              </div>
+              </div> */}
               
               {/* Guests Dress Code Text */}
               <div className="text-center pt-3 sm:pt-4 border-t border-motif-silver/70 px-3 sm:px-4 mb-4">
